@@ -202,8 +202,6 @@ func GeneratePrivateKey(keyType string, keyBits int, container ParsedPrivateKeyC
 		privateKeyType = ECPrivateKey
 		var curve elliptic.Curve
 		switch keyBits {
-		case 224:
-			curve = elliptic.P224()
 		case 256:
 			curve = elliptic.P256()
 		case 384:
